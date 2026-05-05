@@ -1,0 +1,119 @@
+{
+  "whoami": {
+    "role": "Développeur web fullstack",
+    "focus": "cybersécurité + développement web",
+    "stack": "JS · React · Node.js · PHP · MySQL",
+    "sec_tools": "Burp Suite · Nmap · OWASP · Hacklab · TryHackMe",
+    "formation": "GRETA du Limousin — Bac +2 dev web",
+    "background": "Bac STI2D · passionné d'informatique depuis toujours",
+    "status": "open to work · disponible"
+  },
+
+  "skills": {
+    "cybersecurity": [
+      "Pentest",
+      "OWASP Top 10",
+      "Hacklab",
+      "TryHackMe",
+      "Burp Suite",
+      "Nmap",
+      "Linux",
+      "Réseaux TCP/IP"
+    ],
+
+    "devweb": [
+      "HTML/CSS",
+      "JavaScript",
+      "React",
+      "PHP",
+      "Node.js",
+      "MySQL / MongoDB",
+      "Git"
+    ]
+  },
+
+  "projects": [
+    {
+      "name": "Booki - Agence de voyage",
+      "langages": "HTML - CSS",
+      "desc": "Intégration d'une maquette responsive pour une agence de voyage",
+      "type": "web",
+      "github": ""
+    },
+    {
+      "name": "Sophie Bluel - Architecte",
+      "langages": "JavaScript - DOM - API REST",
+      "desc": "Portfolio dynamique avec authentification et gestion des projets",
+      "type": "web",
+      "github": ""
+    },
+    {
+      "name": "Nina Carducci - Photographe",
+      "langages": "SEO - Debug - Accessibilité",
+      "desc": "Optimisation SEO, débogage et accessibilité d'un site existant",
+      "type": "web",
+      "github": ""
+    },
+    {
+      "name": "Kasa — Location immobilière",
+      "langages": "React - React Router - JSON",
+      "desc": "Application de location immobilière avec routing et composants dynamiques",
+      "type": "web",
+      "github": ""
+    },
+    {
+      "name": "Mon Vieux Grimoire",
+      "langages": "Node.js - Express - MongoDB",
+      "desc": "API REST sécurisée pour un site de notation de livres",
+      "type": "web",
+      "github": ""
+    },
+    {
+      "name": "Hacklab - Cybersecurity",
+      "langages": "PHP/Symfony - MySQL - React - Scss - Apache - Docker",
+      "desc": "Intégration d'une maquette responsive pour une agence de voyage",
+      "type": "sec",
+      "github": ""
+    },
+    {
+      "name": "Erray Galiskan Carrelages",
+      "langages": "PHP - JavaScript - JSON",
+      "desc": "Intégration d'une maquette responsive pour une agence de voyage",
+      "type": "sec",
+      "github": ""
+    }
+  ],
+
+  "parcours": [
+    {
+      "name": "Développeur Web - BAC +2",
+      "école": "GRETA du Limousin",
+      "desc": "",
+      "date": "2025-2026"
+    },
+    {
+      "name": "Auto-Formation",
+      "école": "Télétravail",
+      "desc": "Apprentissage de la cybersécurité depuis la plateforme TryHackMe",
+      "date": "2024-2026"
+    },
+    {
+      "name": "Auto-Formation",
+      "école": "Télétravail",
+      "desc": "Apprentissage Langages de Programmation (HTML / CSS , JavaScript, React, NoSQL, PHP)",
+      "date": "2023-2024"
+    },
+    {
+      "name": "BAC STI2D",
+      "école": "Lycée Turgot",
+      "desc": "Parcours scolaire traditionel",
+      "date": "2021-2023"
+    }
+  ],
+
+  "social-link": {
+    "Github": "https://github.com/lalandem87",
+    "LinkedIN": "https://www.linkedin.com/in/maxime-lalande-8031252a0/",
+    "Email": "lalandemaxime37@gmail.com"
+  }
+}
