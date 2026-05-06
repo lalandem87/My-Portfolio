@@ -114,3 +114,69 @@ h3 span {
 .list .key {
   color: #4a9e6a;
 }
+
+.title-skill {
+  font-size: 0.8rem;
+  font-weight: 200;
+  padding: 0.7rem 0;
+  text-transform: uppercase;
+  color: #28c840;
+  letter-spacing: 0.1rem;
+}
+
+.container-cards {
+  display: flex;
+  gap: 0.5rem;
+  border-top: 1px solid #1e2e26;
+  padding-top: 0.6rem;
+}
+
+.card {
+  color: #4a9e6a;
+  background: #0a140e;
+  border: 1px solid #1e4a30;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.1rem;
+}
+
+.cybersec .card:nth-child(1) {
+  border: 1px solid;
+  color: #28c840;
+  background-color: #0d1f12;
+}
+
+.cybersec .card:nth-child(2) {
+  border: 1px solid;
+  color: #28c840;
+  background-color: #0d1f12;
+}
+
+.cybersec .card:nth-child(3) {
+  border: 1px solid #febc2e55;
+  color: #febc2e;
+  background-color: #140f00;
+}
+
+.cybersec .card:nth-child(4) {
+  border: 1px solid #febc2e55;
+  color: #febc2e;
+  background-color: #140f00;
+}
+
+.devweb .card:nth-child(1) {
+  border: 1px solid;
+  color: #28c840;
+  background-color: #0d1f12;
+}
+
+.devweb .card:nth-child(2) {
+  border: 1px solid;
+  color: #28c840;
+  background-color: #0d1f12;
+}
+
+.devweb .card:nth-child(3) {
+  border: 1px solid;
+  color: #28c840;
+  background-color: #0d1f12;
+}

@@ -29,4 +29,30 @@ async function loadList() {
   });
 }
 
+function loadCards(data, container) {
+  for (const d of data) {
+    container.insertAdjacentHTML(
+      "beforeEnd",
+      `
+        <div class="card">
+          <div class="card-content">${d}</div>
+        </div>
+      `,
+    );
+  }
+}
+
+async function loadSkills() {
+  const data = await getData();
+  const cyberData = data["skills"]["cybersecurity"];
+  const devData = data["skills"]["devweb"];
+
+  const containerCyber = document.querySelector(".cybersec");
+  const containerDev = document.querySelector(".devweb");
+
+  loadCards(cyberData, containerCyber);
+  loadCards(devData, containerDev);
+}
+
 loadList();
+loadSkills();
