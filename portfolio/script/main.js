@@ -1,6 +1,6 @@
 async function getData() {
   try {
-    const request = await fetch("../back-end/data.json");
+    const request = await fetch("./data.json");
     if (!request.ok) {
       console.log("There's an error when you try to grab data!");
     }
