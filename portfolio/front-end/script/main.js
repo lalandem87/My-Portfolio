@@ -81,6 +81,31 @@ async function loadVignette() {
   });
 }
 
+async function loadParcours() {
+  const data = await getData();
+  const parcours = data["parcours"];
+
+  const containerParcours = document.querySelector(".container-parcours");
+
+  parcours.forEach((parcour) => {
+    containerParcours.insertAdjacentHTML(
+      "beforeend",
+      `
+      <div class="parcour">
+        <div class="date">${parcour.date}</div>
+        <div class="middle-bar">|</div>
+        <div class="desc">
+          <h4>${parcour.name}</h4>
+          <p>${parcour.école}</p>
+          <p>${parcour.desc}</p>
+        </div>
+      </div>
+      `,
+    );
+  });
+}
+
 loadList();
 loadSkills();
 loadVignette();
+loadParcours();

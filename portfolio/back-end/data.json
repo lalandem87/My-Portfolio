@@ -89,25 +89,25 @@
       "name": "Développeur Web - BAC +2",
       "école": "GRETA du Limousin",
       "desc": "",
-      "date": "2025-2026"
+      "date": "2025 -> 2026"
     },
     {
       "name": "Auto-Formation",
       "école": "Télétravail",
       "desc": "Apprentissage de la cybersécurité depuis la plateforme TryHackMe",
-      "date": "2024-2026"
+      "date": "2024 -> 2026"
     },
     {
       "name": "Auto-Formation",
       "école": "Télétravail",
       "desc": "Apprentissage Langages de Programmation (HTML / CSS , JavaScript, React, NoSQL, PHP)",
-      "date": "2023-2024"
+      "date": "2023 -> 2024"
     },
     {
       "name": "BAC STI2D",
       "école": "Lycée Turgot",
       "desc": "Parcours scolaire traditionel",
-      "date": "2021-2023"
+      "date": "2021 -> 2023"
     }
   ],
 

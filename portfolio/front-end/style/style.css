@@ -204,6 +204,7 @@ h3 span {
 }
 
 h4 {
+  font-size: 0.9rem;
   color: #e8f5ef;
 }
 
@@ -218,10 +219,11 @@ h4 {
 }
 
 .info div {
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
   color: #28c840;
   border: 1px solid #1e4a30;
   padding: 0.1rem 0.5rem;
-  text-transform: uppercase;
   border-radius: 0.1rem;
   text-wrap: nowrap;
 }
@@ -242,4 +244,22 @@ h4 {
   color: #3a5a48;
   background-color: transparent;
   cursor: pointer;
+}
+
+.container-parcours {
+  border-bottom: 1px solid #1e2e26;
+}
+.parcour {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  color: #3a5a48;
+}
+
+.parcour h4 {
+  color: #c8fae0;
+}
+
+.parcour .desc {
+  color: #4a7060;
 }
