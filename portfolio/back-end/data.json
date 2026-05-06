@@ -38,35 +38,35 @@
       "langages": "HTML - CSS",
       "desc": "Intégration d'une maquette responsive pour une agence de voyage",
       "type": "web",
-      "github": ""
+      "github": "https://github.com/lalandem87/Projet-Booki-OpenClassRooms"
     },
     {
       "name": "Sophie Bluel - Architecte",
       "langages": "JavaScript - DOM - API REST",
       "desc": "Portfolio dynamique avec authentification et gestion des projets",
       "type": "web",
-      "github": ""
+      "github": "https://github.com/lalandem87/Portfolio-architecte-sophie-bluel-1"
     },
     {
       "name": "Nina Carducci - Photographe",
       "langages": "SEO - Debug - Accessibilité",
       "desc": "Optimisation SEO, débogage et accessibilité d'un site existant",
       "type": "web",
-      "github": ""
+      "github": "https://github.com/lalandem87/Nina-Carducci-Dev"
     },
     {
       "name": "Kasa — Location immobilière",
       "langages": "React - React Router - JSON",
       "desc": "Application de location immobilière avec routing et composants dynamiques",
       "type": "web",
-      "github": ""
+      "github": "https://github.com/lalandem87/Project-React-Kasa"
     },
     {
       "name": "Mon Vieux Grimoire",
       "langages": "Node.js - Express - MongoDB",
       "desc": "API REST sécurisée pour un site de notation de livres",
       "type": "web",
-      "github": ""
+      "github": "https://github.com/lalandem87/Mon-Vieux-Grimoire"
     },
     {
       "name": "Hacklab - Cybersecurity",
@@ -80,7 +80,7 @@
       "langages": "PHP - JavaScript - JSON",
       "desc": "Site vitrine pour une entreprise de carrelage — réalisé en stage",
       "type": "stage",
-      "github": ""
+      "github": "https://github.com/lalandem87/Site-Carrelages-Galiskan"
     }
   ],
 
@@ -111,9 +111,9 @@
     }
   ],
 
-  "social-link": {
+  "social-links": {
     "Github": "https://github.com/lalandem87",
     "LinkedIN": "https://www.linkedin.com/in/maxime-lalande-8031252a0/",
-    "Email": "lalandemaxime37@gmail.com"
+    "Email": "mailto:lalandemaxime37@gmail.com"
   }
 }

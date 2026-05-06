@@ -65,7 +65,7 @@ async function loadVignette() {
       "beforeend",
       `
       <div class="vignette">
-        <span>${index}</span>
+        <span>${index + 1}</span>
         <div class="content">
           <h4>${project.name}</h4>
           <div>${project.langages}</div>
@@ -73,7 +73,7 @@ async function loadVignette() {
         </div>
         <div class="info">
           <div>${project.type}</div>
-          <button><i class="fa-brands fa-github">${project.github}</i></button>
+          ${project.github ? `<a href="${project.github}" target="_blank"><i class="fa-brands fa-github"></i></a>` : ""}
         </div>
       </div>
       `,
@@ -105,7 +105,24 @@ async function loadParcours() {
   });
 }
 
+async function loadSocialLinks() {
+  const data = await getData();
+  const socialLinks = data["social-links"];
+
+  const containerSocials = document.querySelector(".social-links");
+
+  Object.entries(socialLinks).forEach(([key, value]) => {
+    containerSocials.insertAdjacentHTML(
+      "beforeend",
+      `
+      <a href="${value}">${key}</a>
+      `,
+    );
+  });
+}
+
 loadList();
 loadSkills();
 loadVignette();
 loadParcours();
+loadSocialLinks();

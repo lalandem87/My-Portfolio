@@ -5,8 +5,8 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+  max-width: 100vw;
+  min-height: 100vh;
   font-family: "JetBrains Mono", monospace;
   font-size: 0.8rem;
   color: #c8fae0;
@@ -215,7 +215,8 @@ h4 {
 .info {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 .info div {
@@ -238,11 +239,8 @@ h4 {
   color: #afa9ec;
 }
 
-.info button {
-  border: 0;
-  padding: 0.5rem;
+.info a {
   color: #3a5a48;
-  background-color: transparent;
   cursor: pointer;
 }
 
@@ -262,4 +260,51 @@ h4 {
 
 .parcour .desc {
   color: #4a7060;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  color: #4a7060;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #4a7060;
+}
+
+.social-links a:hover {
+  color: #28c840;
+}
+
+.waitingforcmd h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.cursor {
+  display: inline-block;
+  height: 12px;
+  width: 8px;
+  background-color: #28c840;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
