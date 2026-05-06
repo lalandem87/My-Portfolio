@@ -99,6 +99,7 @@ h3 span {
   border-top: 1px solid #3a5a48;
   border-bottom: 1px solid #3a5a48;
   padding: 1rem 0;
+  max-width: 550px;
 }
 
 .list:first-child {
@@ -179,4 +180,66 @@ h3 span {
   border: 1px solid;
   color: #28c840;
   background-color: #0d1f12;
+}
+
+.vignette {
+  display: grid;
+  grid-template-columns: 0.1fr 4fr 0fr;
+  border-bottom: 1px solid #111a14;
+  padding: 0.5rem 0;
+}
+
+.vignette:last-child {
+  border: 0;
+}
+
+.vignette span {
+  color: #3a5a48;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+h4 {
+  color: #e8f5ef;
+}
+
+.content div {
+  color: #3a5a48;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.info div {
+  color: #28c840;
+  border: 1px solid #1e4a30;
+  padding: 0.1rem 0.5rem;
+  text-transform: uppercase;
+  border-radius: 0.1rem;
+  text-wrap: nowrap;
+}
+
+.vignette:nth-child(6) .info div {
+  border-color: #febc2e44;
+  color: #febc2e;
+}
+
+.vignette:last-child .info div {
+  border-color: #534ab755;
+  color: #afa9ec;
+}
+
+.info button {
+  border: 0;
+  padding: 0.5rem;
+  color: #3a5a48;
+  background-color: transparent;
+  cursor: pointer;
 }

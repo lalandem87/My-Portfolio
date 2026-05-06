@@ -54,5 +54,33 @@ async function loadSkills() {
   loadCards(devData, containerDev);
 }
 
+async function loadVignette() {
+  const data = await getData();
+  const projects = data["projects"];
+
+  const containerVignette = document.querySelector(".container-vignette");
+
+  projects.forEach((project, index) => {
+    containerVignette.insertAdjacentHTML(
+      "beforeend",
+      `
+      <div class="vignette">
+        <span>${index}</span>
+        <div class="content">
+          <h4>${project.name}</h4>
+          <div>${project.langages}</div>
+          <div>${project.desc}</div>
+        </div>
+        <div class="info">
+          <div>${project.type}</div>
+          <button><i class="fa-brands fa-github">${project.github}</i></button>
+        </div>
+      </div>
+      `,
+    );
+  });
+}
+
 loadList();
 loadSkills();
+loadVignette();

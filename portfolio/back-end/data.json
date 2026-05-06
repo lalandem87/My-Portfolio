@@ -71,15 +71,15 @@
     {
       "name": "Hacklab - Cybersecurity",
       "langages": "PHP/Symfony - MySQL - React - Scss - Apache - Docker",
-      "desc": "Intégration d'une maquette responsive pour une agence de voyage",
-      "type": "sec",
+      "desc": "Challenges de sécurité offensifs — injections, XSS, escalade de privilèges",
+      "type": "web / sec",
       "github": ""
     },
     {
       "name": "Erray Galiskan Carrelages",
       "langages": "PHP - JavaScript - JSON",
-      "desc": "Intégration d'une maquette responsive pour une agence de voyage",
-      "type": "sec",
+      "desc": "Site vitrine pour une entreprise de carrelage — réalisé en stage",
+      "type": "stage",
       "github": ""
     }
   ],
