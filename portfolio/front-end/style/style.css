@@ -8,6 +8,7 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: "JetBrains Mono", monospace;
+  font-size: 0.8rem;
   color: #c8fae0;
   background-color: #0d0f0e;
 }
@@ -47,6 +48,69 @@ header {
 
 h1 {
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
   color: #4a7060;
+}
+
+.main-container {
+  padding: 1.5rem;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.comment {
+  font-size: 0.9rem;
+  color: #2a3e30;
+}
+
+h2 {
+  font-size: 1rem;
+  margin: 1.5rem 0;
+}
+
+h2 span:nth-child(1) {
+  color: #28c840;
+}
+
+h2 span:nth-child(2) {
+  color: #3a5a48;
+}
+
+h3 {
+  color: #7dbf9a;
+  padding-bottom: 1rem;
+}
+
+h3 span {
+  color: #28c840;
+}
+
+.container-whoami {
+  padding-left: 1rem;
+}
+
+#lists {
+  border-top: 1px solid #3a5a48;
+  border-bottom: 1px solid #3a5a48;
+  padding: 1rem 0;
+}
+
+.list:first-child {
+  margin: 0;
+}
+
+.list {
+  font-size: 0.9rem;
+  color: #7dbf9a;
+  margin-top: 0.5rem;
+}
+
+.list .key {
+  color: #4a9e6a;
 }
