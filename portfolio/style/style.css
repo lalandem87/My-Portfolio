@@ -3,3 +3,54 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background: #f7f5f0;
+  color: #1a1a1a;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e0ddd6;
+}
+
+.logo {
+  font-family: "Syne", sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  font-size: 12px;
+  color: #888;
+  text-decoration: none;
+}
+
+nav a:last-child span {
+  background-color: #28c840;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+nav a:last-child {
+  font-size: 11px;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 6px 12px;
+}
