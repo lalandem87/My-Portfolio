@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maxime Lalande - Portfolio Mode Terminale</title>
+    <link rel="stylesheet" href="./style/style-terminal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="dots">
+        <span class="dot r"></span>
+        <span class="dot g"></span>
+        <span class="dot b"></span>
+      </div>
+      <h1>maxime@portfolio ~ zsh</h1>
+    </header>
+
+    <div class="main-container">
+      <main>
+        <div class="comments">
+          <div class="comment">
+            # -----------------------------------------------
+          </div>
+          <div class="comment"># portfolio v4.0 — lalande maxime</div>
+          <div class="comment">
+            # -----------------------------------------------
+          </div>
+        </div>
+
+        <section class="whoami">
+          <h2>
+            <span>~/</span>
+            <span>$</span>
+            <span>whoami</span>
+          </h2>
+          <div class="container-whoami">
+            <h3><span>Maxime Lalande</span> - 21 ans · Limoges, FR</h3>
+            <div id="lists"></div>
+          </div>
+        </section>
+        <section class="skills">
+          <h2>
+            <span>~/</span>
+            <span>$</span>
+            <span>cat skills.txt</span>
+          </h2>
+          <h3 class="title-skill">// Cybersécurité</h3>
+          <div class="container-cards cybersec"></div>
+          <h3 class="title-skill">// Dev Web</h3>
+          <div class="container-cards devweb"></div>
+        </section>
+        <section class="projects">
+          <h2>
+            <span>~/</span>
+            <span>$</span>
+            <span>ls -la projects/</span>
+          </h2>
+          <div class="container-vignette"></div>
+        </section>
+        <section class="parcours">
+          <h2>
+            <span>~/</span>
+            <span>$</span>
+            <span>cat parcours.log</span>
+          </h2>
+          <div class="container-parcours"></div>
+        </section>
+      </main>
+      <footer>
+        <div class="social-links"></div>
+        <p>© 2025 maxime lalande</p>
+      </footer>
+      <section class="waitingforcmd">
+        <h2>
+          <span>~/</span>
+          <span>$</span>
+          <span class="cursor"></span>
+        </h2>
+      </section>
+    </div>
+  </body>
+  <script src="./script/main.js"></script>
+</html>

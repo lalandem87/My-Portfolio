@@ -1,88 +1,40 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maxime Lalande - Portfolio</title>
     <link rel="stylesheet" href="./style/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
   </head>
   <body>
     <header>
-      <div class="dots">
-        <span class="dot r"></span>
-        <span class="dot g"></span>
-        <span class="dot b"></span>
-      </div>
-      <h1>maxime@portfolio ~ zsh</h1>
+      <div class="logo">ML.</div>
+      <nav>
+        <a href="">Projets</a>
+        <a href="">Skills</a>
+        <a href="">Parcours</a>
+        <a href="./terminal.html">Terminal mode</a>
+      </nav>
     </header>
-
-    <div class="main-container">
-      <main>
-        <div class="comments">
-          <div class="comment">
-            # -----------------------------------------------
-          </div>
-          <div class="comment"># portfolio v4.0 — lalande maxime</div>
-          <div class="comment">
-            # -----------------------------------------------
-          </div>
-        </div>
-
-        <section class="whoami">
-          <h2>
-            <span>~/</span>
-            <span>$</span>
-            <span>whoami</span>
-          </h2>
-          <div class="container-whoami">
-            <h3><span>Maxime Lalande</span> - 21 ans · Limoges, FR</h3>
-            <div id="lists"></div>
-          </div>
-        </section>
-        <section class="skills">
-          <h2>
-            <span>~/</span>
-            <span>$</span>
-            <span>cat skills.txt</span>
-          </h2>
-          <h3 class="title-skill">// Cybersécurité</h3>
-          <div class="container-cards cybersec"></div>
-          <h3 class="title-skill">// Dev Web</h3>
-          <div class="container-cards devweb"></div>
-        </section>
-        <section class="projects">
-          <h2>
-            <span>~/</span>
-            <span>$</span>
-            <span>ls -la projects/</span>
-          </h2>
-          <div class="container-vignette"></div>
-        </section>
-        <section class="parcours">
-          <h2>
-            <span>~/</span>
-            <span>$</span>
-            <span>cat parcours.log</span>
-          </h2>
-          <div class="container-parcours"></div>
-        </section>
-      </main>
-      <footer>
-        <div class="social-links"></div>
-        <p>© 2025 maxime lalande</p>
-      </footer>
-      <section class="waitingforcmd">
-        <h2>
-          <span>~/</span>
-          <span>$</span>
-          <span class="cursor"></span>
-        </h2>
+    <main>
+      <section class="intro">
+        <span>Développeur web & cybersécurité</span>
+        <h1>
+          Maxime
+          <span>Lalande</span>
+        </h1>
+        <p>
+          Passionné d'informatique, je construis des applications web robustes
+          et sécurisées. Bac +2 au GRETA du Limousin, basé à Limoges.
+        </p>
+        <div class="nbr-projects"></div>
+        <div class="age"></div>
       </section>
-    </div>
+      <div class="bar-skills"></div>
+      <section class="competences"></section>
+      <section class="projects"></section>
+      <section class="parcours"></section>
+    </main>
+    <footer></footer>
   </body>
-  <script src="./script/main.js"></script>
 </html>
