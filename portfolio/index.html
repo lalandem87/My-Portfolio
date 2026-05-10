@@ -3,41 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maxime Lalande - Portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <div class="logo">ML.</div>
       <nav>
-        <a href="">Projets</a>
-        <a href="">Skills</a>
-        <a href="">Parcours</a>
-        <a href="./terminal.html">
-          <span></span>
-          Terminal mode
-        </a>
+        <a href="" class="nav-link">Projets</a>
+        <a href="" class="nav-link">Skills</a>
+        <a href="" class="nav-link">Parcours</a>
+        <a href="./terminal.html" class="nav-link btn-terminal"
+          >Terminal mode</a
+        >
       </nav>
     </header>
     <main>
-      <section class="intro">
-        <span>Développeur web & cybersécurité</span>
-        <h1>
-          Maxime
-          <span>Lalande</span>
-        </h1>
-        <p>
-          Passionné d'informatique, je construis des applications web robustes
-          et sécurisées. Bac +2 au GRETA du Limousin, basé à Limoges.
-        </p>
-        <div class="nbr-projects"></div>
-        <div class="age"></div>
+      <section class="hero">
+        <div class="hero-left">
+          <div class="hero-badge">Développeur web & cybersécurité</div>
+          <h1>
+            Maxime
+            <span>Lalande.</span>
+          </h1>
+          <p class="hero-desc">
+            Passionné d'informatique, je construis des applications web robustes
+            et sécurisées. Bac +2 au GRETA du Limousin, basé à Limoges.
+          </p>
+        </div>
+        <div class="hero-right">
+          <div class="hero-stat">
+            <div class="hero-stat-num"></div>
+            <div class="hero-stat-label">Projets</div>
+          </div>
+          <div class="hero-divider"></div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">21</div>
+            <div class="hero-stat-label">Ans</div>
+          </div>
+        </div>
       </section>
-      <div class="bar-skills"></div>
+      <div class="skills-bar">
+        <div class="brand"></div>
+      </div>
       <section class="competences"></section>
       <section class="projects"></section>
       <section class="parcours"></section>
     </main>
     <footer></footer>
   </body>
+  <script src="./script/main.js" defer></script>
 </html>

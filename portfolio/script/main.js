@@ -11,118 +11,35 @@ async function getData() {
   }
 }
 
-async function loadList() {
-  const lists = document.getElementById("lists");
+async function setHero() {
   const data = await getData();
-  const whoami = data["whoami"];
-
-  Object.entries(whoami).forEach(([key, value]) => {
-    lists.insertAdjacentHTML(
-      "beforeEnd",
-      `
-        <div class="list">
-            <span class="key">${key} ::</span>
-            <span class="value">${value}</span>
-        </div>
-        `,
-    );
-  });
-}
-
-function loadCards(data, container) {
-  for (const d of data) {
-    container.insertAdjacentHTML(
-      "beforeEnd",
-      `
-        <div class="card">
-          <div class="card-content">${d}</div>
-        </div>
-      `,
-    );
+  const heroStatNum = document.querySelector(".hero-stat-num");
+  if (data) {
+    const dataProjects = data["projects"];
+    heroStatNum.innerText = `0${dataProjects.length}`;
   }
 }
 
-async function loadSkills() {
+async function setSkillsBar() {
   const data = await getData();
-  const cyberData = data["skills"]["cybersecurity"];
-  const devData = data["skills"]["devweb"];
+  const container = document.querySelector(".brand");
+  if (data) {
+    const allSkills = [
+      ...data["skills"]["cybersecurity"],
+      ...data["skills"]["devweb"],
+    ];
 
-  const containerCyber = document.querySelector(".cybersec");
-  const containerDev = document.querySelector(".devweb");
-
-  loadCards(cyberData, containerCyber);
-  loadCards(devData, containerDev);
+    [...allSkills, ...allSkills].forEach((skill) => {
+      container.insertAdjacentHTML(
+        "beforeend",
+        `
+        <span class="skill">${skill}</span>
+        <span class="dot-sep">.</span>
+        `,
+      );
+    });
+  }
 }
 
-async function loadVignette() {
-  const data = await getData();
-  const projects = data["projects"];
-
-  const containerVignette = document.querySelector(".container-vignette");
-
-  projects.forEach((project, index) => {
-    containerVignette.insertAdjacentHTML(
-      "beforeend",
-      `
-      <div class="vignette">
-        <span>${index + 1}</span>
-        <div class="content">
-          <h4>${project.name}</h4>
-          <div>${project.langages}</div>
-          <div>${project.desc}</div>
-        </div>
-        <div class="info">
-          <div>${project.type}</div>
-          ${project.github ? `<a href="${project.github}" target="_blank"><i class="fa-brands fa-github"></i></a>` : ""}
-        </div>
-      </div>
-      `,
-    );
-  });
-}
-
-async function loadParcours() {
-  const data = await getData();
-  const parcours = data["parcours"];
-
-  const containerParcours = document.querySelector(".container-parcours");
-
-  parcours.forEach((parcour) => {
-    containerParcours.insertAdjacentHTML(
-      "beforeend",
-      `
-      <div class="parcour">
-        <div class="date">${parcour.date}</div>
-        <div class="middle-bar">|</div>
-        <div class="desc">
-          <h4>${parcour.name}</h4>
-          <p>${parcour.école}</p>
-          <p>${parcour.desc}</p>
-        </div>
-      </div>
-      `,
-    );
-  });
-}
-
-async function loadSocialLinks() {
-  const data = await getData();
-  const socialLinks = data["social-links"];
-
-  const containerSocials = document.querySelector(".social-links");
-
-  Object.entries(socialLinks).forEach(([key, value]) => {
-    containerSocials.insertAdjacentHTML(
-      "beforeend",
-      `
-      <a href="${value}">${key}</a>
-      `,
-    );
-  });
-}
-
-loadList();
-loadSkills();
-loadVignette();
-loadParcours();
-loadSocialLinks();
+setHero();
+setSkillsBar();
