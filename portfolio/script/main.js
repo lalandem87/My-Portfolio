@@ -63,12 +63,15 @@ async function setComp() {
   }
 }
 
-function setCardContainer(data, container, className) {
-  data.forEach((project, index) => {
+async function setProjectsCard() {
+  const data = await getData();
+  const projectsData = data["projects"];
+  const container = document.querySelector(".projs-card-container");
+  projectsData.forEach((project, index) => {
     container.insertAdjacentHTML(
       "beforeend",
       `
-      <div class="card ${className}">
+      <div class="card">
         <em class="index">0${index + 1}</em>
         <h3>${project.name}</h3>
         <div class="project-stack">${project.langages}</div>
@@ -84,13 +87,43 @@ function setCardContainer(data, container, className) {
   });
 }
 
-async function setProjectsCard() {
+async function setParcoursCard() {
   const data = await getData();
-  const projectsData = data["projects"];
-  const container = document.querySelector(".card-container");
-  setCardContainer(projectsData, container, "project");
+  if (data) {
+    const parcoursData = data["parcours"];
+    const container = document.querySelector(".parcs-card-container");
+
+    parcoursData.forEach((parcour) => {
+      if (parcour.desc) {
+        container.insertAdjacentHTML(
+          "beforeend",
+          `
+        <div class="parcour-card">
+          <em class="parcour-date">${parcour.date}</em>
+          <h3>${parcour.name}</h3>
+          <div>${parcour.école}</div>
+          <p>${parcour.desc}</p>
+        </div>
+        `,
+        );
+      } else {
+        container.insertAdjacentHTML(
+          "beforeend",
+          `
+        <div class="parcour-card">
+          <em class="parcour-date">${parcour.date}</em>
+          <h3>${parcour.name}</h3>
+          <div>${parcour.école}</div>
+        </div>
+        `,
+        );
+      }
+    });
+  }
 }
+
 setHero();
 setSkillsBar();
 setComp();
 setProjectsCard();
+setParcoursCard();

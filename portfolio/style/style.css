@@ -213,13 +213,13 @@ h2 {
   border: 1px solid #e0ddd6;
 }
 
-.card-container {
+.projs-card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 
-.card.project {
+.projs-card-container .card {
   position: relative;
   background: #fff;
   border: 1px solid #e0ddd6;
@@ -231,7 +231,7 @@ h2 {
   transition: border-color 0.15s;
 }
 
-.project .index {
+.projs-card-container .card .index {
   font-family: "Syne", sans-serif;
   font-size: 11px;
   color: #ccc;
@@ -277,4 +277,45 @@ h3 {
   border-radius: 100px;
   border: 1px solid #e0ddd6;
   color: #888;
+}
+
+.parcs-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.parcour-card {
+  background-color: #fff;
+  border: 1px solid #e0ddd6;
+  border-radius: 12px;
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.parcour-date {
+  font-size: 10px;
+  color: #aaa;
+  letter-spacing: 0.05em;
+}
+
+.parcour-card h3 {
+  font-family: "Syne", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.parcour-card div {
+  font-size: 11px;
+  color: #aaa;
+}
+
+.parcour-card p {
+  font-size: 11px;
+  color: #aaa;
+  line-height: 1.5;
+  margin-top: 4px;
 }
