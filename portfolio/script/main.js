@@ -122,8 +122,26 @@ async function setParcoursCard() {
   }
 }
 
+async function setSocialLinks() {
+  const data = await getData();
+  if (data) {
+    const socialsData = data["social-links"];
+    const container = document.querySelector(".social-links");
+
+    Object.entries(socialsData).forEach(([key, value]) => {
+      container.insertAdjacentHTML(
+        "beforeend",
+        `
+        <a href="${value}">${key}</a>
+        `,
+      );
+    });
+  }
+}
+
 setHero();
 setSkillsBar();
 setComp();
 setProjectsCard();
 setParcoursCard();
+setSocialLinks();
