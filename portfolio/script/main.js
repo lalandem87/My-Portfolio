@@ -33,8 +33,30 @@ async function setSkillsBar() {
       container.insertAdjacentHTML(
         "beforeend",
         `
-        <span class="skill">${skill}</span>
+        <span class="skill">${skill.name}</span>
         <span class="dot-sep">.</span>
+        `,
+      );
+    });
+  }
+}
+
+async function setComp() {
+  const data = await getData();
+  const container = document.querySelector(".comp-container");
+  if (data) {
+    const compData = [
+      ...data["skills"]["cybersecurity"],
+      ...data["skills"]["devweb"],
+    ].slice(0, 11);
+
+    compData.forEach((comp) => {
+      container.insertAdjacentHTML(
+        "beforeend",
+        `
+            <div class="skill-pill ${comp.category}">
+                <span>${comp.name}</span>
+            </div>
         `,
       );
     });
@@ -43,3 +65,4 @@ async function setSkillsBar() {
 
 setHero();
 setSkillsBar();
+setComp();

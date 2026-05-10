@@ -11,24 +11,23 @@
 
   "skills": {
     "cybersecurity": [
-      "Pentest",
-      "OWASP Top 10",
-      "Hacklab",
-      "TryHackMe",
-      "Burp Suite",
-      "Nmap",
-      "Linux",
-      "Réseaux TCP/IP"
+      { "name": "Pentest", "category": "hot" },
+      { "name": "OWASP Top 10", "category": "cyber" },
+      { "name": "Hacklab", "category": "cyber" },
+      { "name": "TryHackMe", "category": "cyber" },
+      { "name": "Burp Suite", "category": "default" },
+      { "name": "Nmap", "category": "default" },
+      { "name": "Linux", "category": "default" },
+      { "name": "Réseaux TCP/IP", "category": "default" }
     ],
-
     "devweb": [
-      "HTML / CSS",
-      "JavaScript",
-      "React",
-      "PHP",
-      "Node.js",
-      "MySQL / MongoDB",
-      "Git"
+      { "name": "HTML / CSS", "category": "hot" },
+      { "name": "JavaScript", "category": "hot" },
+      { "name": "React", "category": "hot" },
+      { "name": "PHP", "category": "default" },
+      { "name": "Node.js", "category": "default" },
+      { "name": "MySQL / MongoDB", "category": "default" },
+      { "name": "Git", "category": "default" }
     ]
   },
 
