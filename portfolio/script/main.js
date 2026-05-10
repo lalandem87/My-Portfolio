@@ -63,6 +63,34 @@ async function setComp() {
   }
 }
 
+function setCardContainer(data, container, className) {
+  data.forEach((project, index) => {
+    container.insertAdjacentHTML(
+      "beforeend",
+      `
+      <div class="card ${className}">
+        <em class="index">0${index + 1}</em>
+        <h3>${project.name}</h3>
+        <div class="project-stack">${project.langages}</div>
+        <div class="project-card-bottom">
+          <p>${project.desc}</p>
+          <a href="${project.github}"><i class="fa-brands fa-github"></i></a>
+        </div>
+        
+        <span class="project-badge">${project.type}</span>
+      </div>
+        `,
+    );
+  });
+}
+
+async function setProjectsCard() {
+  const data = await getData();
+  const projectsData = data["projects"];
+  const container = document.querySelector(".card-container");
+  setCardContainer(projectsData, container, "project");
+}
 setHero();
 setSkillsBar();
 setComp();
+setProjectsCard();
