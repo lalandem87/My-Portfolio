@@ -140,46 +140,16 @@ h3 span {
   border-radius: 0.1rem;
 }
 
-.cybersec .card:nth-child(1) {
-  border: 1px solid;
-  color: #28c840;
-  background-color: #0d1f12;
-}
-
-.cybersec .card:nth-child(2) {
-  border: 1px solid;
-  color: #28c840;
-  background-color: #0d1f12;
-}
-
-.cybersec .card:nth-child(3) {
-  border: 1px solid #febc2e55;
+.hot {
+  border-color: #febc2e55;
   color: #febc2e;
-  background-color: #140f00;
+  background: #140f00;
 }
 
-.cybersec .card:nth-child(4) {
-  border: 1px solid #febc2e55;
-  color: #febc2e;
-  background-color: #140f00;
-}
-
-.devweb .card:nth-child(1) {
-  border: 1px solid;
+.cyber {
+  border-color: #28c840;
   color: #28c840;
-  background-color: #0d1f12;
-}
-
-.devweb .card:nth-child(2) {
-  border: 1px solid;
-  color: #28c840;
-  background-color: #0d1f12;
-}
-
-.devweb .card:nth-child(3) {
-  border: 1px solid;
-  color: #28c840;
-  background-color: #0d1f12;
+  background: #0d1f12;
 }
 
 .vignette {

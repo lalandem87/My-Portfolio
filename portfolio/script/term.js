@@ -16,30 +16,43 @@ async function loadList() {
   const data = await getData();
   const whoami = data["whoami"];
 
+  const greenWords = ["cybersécurité", "open to work"];
+
   Object.entries(whoami).forEach(([key, value]) => {
+    let formattedValue = value;
+
+    greenWords.forEach((word) => {
+      if (value.toLowerCase().includes(word)) {
+        formattedValue = formattedValue.replace(
+          new RegExp(word, "gi"),
+          `<span style="color: #28c840">${word}</span>`,
+        );
+      }
+    });
+
     lists.insertAdjacentHTML(
-      "beforeEnd",
+      "beforeend",
       `
-        <div class="list">
-            <span class="key">${key} ::</span>
-            <span class="value">${value}</span>
-        </div>
-        `,
+    <div class="list">
+      <span class="key">${key} ::</span>
+      <span class="value">${formattedValue}</span>
+    </div>
+  `,
     );
   });
 }
 
 function loadCards(data, container) {
-  for (const d of data) {
+  Object.entries(data).forEach(([key, value]) => {
     container.insertAdjacentHTML(
       "beforeEnd",
       `
-        <div class="card">
-          <div class="card-content">${d}</div>
+        <div class="card ${value.category}">
+          <div class="card-content ">${value.name}</div>
         </div>
       `,
     );
-  }
+  });
 }
 
 async function loadSkills() {
